@@ -21,4 +21,9 @@ router.get("/",async function(req,res){
     }}
  })
 
+ router.post("/booklink/:id",async (req,res)=>{
+  const bookdata = await Book.findById(req.params.id).lean();
+  res.status(200).send(bookdata)
+ })
+
  module.exports = router
