@@ -20,10 +20,12 @@ app.use("/userslink",userdata)
 //give the route link 
 app.use("/sectionlink",sectiondata)
 //give the route link
-app.use("/booklink",sectiondata)
+app.use("/booklink",bookdata)
 //give the routelink
 app.use("/authorlink",authordata)
 
+
+// <--------------------Crudoperation-------------------
 module.exports = app
 
 

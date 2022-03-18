@@ -27,4 +27,11 @@ router.post("/",async function(req,res){
     }
  })
 
+
+//  <----------------------------------crudoperation----------->
+router.post("/section",async (req,res) =>{
+    const sec = await Section.create(req.body)
+    return res.status(201).send(201).send({sec})
+})
+
 module.exports = router
